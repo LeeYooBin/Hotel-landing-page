@@ -1,0 +1,16 @@
+.logo-wrapper {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 2.3rem;
+  text-align: center;
+  font-family: "tbh+c", sans-serif;
+  color: var(--black);
+  line-height: 1.2;
+  text-shadow: var(--shadow);
+}
+
+.logo-span {
+  font-size: 1.8rem;
+}
