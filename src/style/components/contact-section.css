@@ -1,0 +1,112 @@
+.contact-section {
+  padding: 2rem 2.4rem;
+}
+
+.contact-section__banner {
+  width: 100%;
+  height: auto;
+  padding: 2rem 2.4rem;
+  background-image: url('../assets/img.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.contact-section__banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+.contact-section__title {
+  color: var(--white);
+}
+
+.contact-section__text {
+  font-size: var(--text-size-1);
+  font-weight: var(--text-weight);
+  line-height: 3rem;
+  color: var(--white);
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.contact-section__form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 1.5rem;
+}
+
+.contact-section__input{
+  padding: 2.2rem 2.4rem;
+  border-radius: 1.6rem;
+  outline: none;
+}
+
+.contact-section__button {
+  padding: 1.9rem 2.1rem;
+  border-radius: 1.6rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  font-size: var(--button-text-size);
+  color: var(--white);
+}
+
+@media screen and (min-width: 760px) {
+  .contact-section__banner {
+    border-radius: 4rem;
+    padding: 4rem 7rem;
+    height: 36rem;
+    justify-content: space-around;
+  }
+  
+  .contact-section__text {
+    width: 75%;
+    margin: 0;
+  }
+  
+  .contact-section__form {
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+  
+  .contact-section__input {
+    width: 40rem;
+    padding: 1.5rem 2rem;
+  }
+  
+  .contact-section__button {
+    padding: 1.3rem 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .contact-section__banner {
+    padding: 8rem 10rem;
+  }
+  
+  .contact-section__text {
+    width: 60%;
+  }
+  
+  .contact-section__input{
+    padding: 2.3rem;
+  }
+}
