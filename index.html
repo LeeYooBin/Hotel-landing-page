@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/components/header.css">
+    <link rel="stylesheet" href="./src/style/components/logo.css">
+    <link rel="stylesheet" href="./src/style/components/hero-section.css">
+    <link rel="stylesheet" href="./src/style/components/section-title.css">
+    <link rel="stylesheet" href="./src/style/components/services-section.css">
+    <link rel="stylesheet" href="./src/style/components/about-section.css">
+    <link rel="stylesheet" href="./src/style/components/contact-section.css">
+    <link rel="stylesheet" href="./src/style/components/modal.css">
+    <link rel="stylesheet" href="./src/style/components/footer.css">
+    <link rel="stylesheet" href="./src/style/global.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo-wrapper">
+          <h1 class="logo">
+            Hotel
+          </h1>
+        </a>
+        <div class="header__link-wrapper">
+          <div>
+            <button class="header__menu-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+          </div>
+          <nav class="header__menu">
+            <a href="/" class="header__menu-link">Home</a>
+            <a href="#services" class="header__menu-link">Services</a>
+            <a href="#about" class="header__menu-link">About</a>
+            <a href="#contact" class="header__menu-link">Contact</a>
+          </nav>
+          <a href="#" class="header__login-link">Book now</a>
+        </div>
+    </header>
+    <main class="main">
+      <section class="hero-section">
+        <div class="hero-section__banner">
+          <h1 class="hero-section__title">Welcome to Hotel</h1>
+          <p class="hero-section__slogan">A Lunar Experience Beyond Imagination</p>
+          <a href="#" class="hero-section__cta">Reserve Your Stay</a>
+          <p class="hero-section__rating">Rated 4 out of 5 Stars</p>
+        </div>
+      </section>
+      <section class="services-section" id="services">
+        <h2 class="section-title">Over Service</h2>
+        <div class="services-section__services-wrapper">
+          <div class="service-section__service">
+            <img src="./src/style/assets/lunar.svg" alt="Lunar spa" class="service-section__service-icon">
+            <p class="service-section__service-name">Lunar Spa Retreat</p>
+          </div>
+          <div class="service-section__service">
+            <img src="https://img.icons8.com/?size=100&id=FPQab03oJ7kd&format=png&color=000000" alt="Dinner" class="service-section__service-icon">
+            <p class="service-section__service-name">Zero Gravity Dining</p>
+          </div>
+          <div class="service-section__service">
+            <img src="https://img.icons8.com/?size=100&id=fltK1xN2KfV9&format=png&color=000000" alt="Stars" class="service-section__service-icon">
+            <p class="service-section__service-name">Stellar Observatory</p>
+          </div>
+          <div class="service-section__service">
+            <img src="https://img.icons8.com/?size=100&id=AclPR7dLnKnC&format=png&color=000000" alt="Galaxy" class="service-section__service-icon">
+            <p class="service-section__service-name">Galactic Entertainment</p>
+          </div>
+          <div class="service-section__service">
+            <img src="https://img.icons8.com/?size=100&id=afIkKbGFmfq2&format=png&color=000000" alt="Astros" class="service-section__service-icon">
+            <p class="service-section__service-name">Astro Fitness Center</p>
+          </div>
+          <div class="service-section__service">
+            <img src="https://img.icons8.com/?size=100&id=6oMxKK8X1Ktk&format=png&color=000000" alt="Moon" class="service-section__service-icon">
+            <p class="service-section__service-name">Moonlight Relaxation</p>
+          </div>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <article class="about-section__text-wrapper">
+          <h2 class="section-title about-section__title">Why us?</h2>
+          <div class="about-section__reasons">
+            <div class="about-section-reason">
+              <h3 class="about-section__reason-title">Reason 1</h3>
+              <p class="about-section__reason-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, 
+                quisquam explicabo sunt animi corrupti temporibus fugit eos esse 
+                eum ipsum, similique quaerat natus iste? Similique, accusantium 
+                ratione! Perferendis, qui a.
+              </p>
+            </div>
+            <div class="about-section-reason">
+              <h3 class="about-section__reason-title">Reason 2</h3>
+              <p class="about-section__reason-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, 
+                quisquam explicabo sunt animi corrupti temporibus fugit eos esse 
+                eum ipsum, similique quaerat natus iste? Similique, accusantium 
+                ratione! Perferendis, qui a.
+              </p>
+            </div>
+            <div class="about-section-reason">
+              <h3 class="about-section__reason-title">Reason 3</h3>
+              <p class="about-section__reason-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, 
+                quisquam explicabo sunt animi corrupti temporibus fugit eos esse 
+                eum ipsum, similique quaerat natus iste? Similique, accusantium 
+                ratione! Perferendis, qui a.
+              </p>
+            </div>
+          </div>
+        </article>
+        <img src="./src/style/assets/about-image.jpeg" alt="Hotel lobby" class="about-section__image">
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="contact-section__banner">
+          <h2 class="section-title contact-section__title">Get in Touch</h2>
+          <p class="contact-section__text">
+            Subscribe here and We'll get in touch as soon as possible.
+          </p>
+          <form action="" class="contact-section__form">
+            <input class="contact-section__input" type="email" placeholder="Enter your email">
+            <button class="contact-section__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div id="success-modal" class="modal">
+          <div class="modal__box">
+            <button class="modal__close-button success-modal__close-button" type="button">
+              <img src="./src/style/assets/close-circle.svg" alt="Close Icon" class="modal__close-icon">
+            </button>
+            <img src="./src/style/assets/check-circle.svg" alt="Check Icon" class="modal__check-image">
+            <h2 class="sub-title">Email successfully registered!</h2>
+          </div>
+        </div>
+        <div id="error-modal" class="modal">
+          <div class="modal__box">
+            <button class="modal__close-button error-modal__close-button" type="button">
+              <img src="./src/style/assets/close-circle.svg" alt="Close Icon" class="modal__close-icon">
+            </button>
+            <img src="./src/style/assets/exclamation-circle.svg" alt="Exclamation Icon" class="modal__check-image">
+            <h2 class="sub-title">Invalid Email!</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="/" class=".logo-wrapper footer__logo-wrapper">
+        <h1 class="logo footer__logo">Hotel</h1>
+      </a>
+      <p class="footer__copyright">
+        © 2024. All rights reserved.
+      </p>
+    </footer>
+    <script src="./src/script/mobile-menu.js"></script>
+    <script src="./src/script/submit-email.js"></script>
+</body>
+</html>
