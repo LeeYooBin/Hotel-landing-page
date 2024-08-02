@@ -1,5 +1,5 @@
-const validateEmail = email => {
-  const parts = email.split('@');
+const validateEmail = (email) => {
+  const parts = email.split("@");
 
   if (parts.length !== 2) return false;
 
@@ -7,41 +7,27 @@ const validateEmail = email => {
   const domain = parts[1];
 
   if (user.length === 0 || domain.length === 0) return false;
-  if (!domain.includes('.')) return false;
-  if (domain.includes('..')) return false;
+  if (!domain.includes(".")) return false;
+  if (domain.includes("..")) return false;
 
   return true;
-}
+};
 
-const input = document.querySelector('.contact-section__input');
-const submitButton = document.querySelector('.contact-section__button');
-const successModal = document.querySelector('#success-modal');
-const errorModal = document.querySelector('#error-modal');
-const errorModalCloseButton = document.querySelector('.error-modal__close-button');
-const successModalCloseButton = document.querySelector('.success-modal__close-button');
-const body = document.querySelector('body');
+const form = document.getElementById("contact-form");
+const input = document.getElementById("floatingInput");
+const successModal = new bootstrap.Modal(document.getElementById("success-modal"));
+const errorModal = new bootstrap.Modal(document.getElementById("error-modal"));
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-submitButton.addEventListener('click', e => {
   if (input.value) {
     if (validateEmail(input.value)) {
-      successModal.classList.add('modal-open');
+      successModal.show();
     }
-    else {
-      errorModal.classList.add('modal-open');
-    }
-    body.classList.add('no-overflow');
-    input.value = '';
   }
-  e.preventDefault();
-});
-
-errorModalCloseButton.addEventListener('click', () => {
-  errorModal.classList.remove('modal-open');
-  body.classList.remove('no-overflow');
-});
-
-successModalCloseButton.addEventListener('click', () => {
-  successModal.classList.remove('modal-open');
-  body.classList.remove('no-overflow');
+  else {
+    errorModal.show();
+  }
+  input.value = "";
 });
